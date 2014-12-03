@@ -49,7 +49,7 @@ getChanges()
 	        # 1. prepare dest all folder path
 	        length_src_file=${#file} # 得到总的原文件路径的长度
 	        dest=${file:length_src_folder:length_src_file-length_src_folder} # 得到相对的路径
-	        dest=${path_dst}${dest} # 目标路径和相对路径合并
+	        dest=${path_dst}${dest} # 目标路径和相对路径的连接
 
 	        # 2. create the dest new folder
 			new_folder=${dest%/*} # 从右边截去最多的匹配，得到folder path
